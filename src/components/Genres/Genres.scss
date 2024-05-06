@@ -1,0 +1,16 @@
+@use '../../styles/core' as core;
+
+.genres {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+
+  &__genre {
+    padding: 0.25rem;
+    border-radius: 4px;
+    color: core.$color-text-white-90;
+    font-size: 0.75rem;
+    background: var(--custom__badge__background-color, core.$color-neutral-50);
+  }
+}

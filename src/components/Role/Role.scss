@@ -1,0 +1,25 @@
+@use '../../styles/core' as core;
+
+.role {
+  position: relative;
+  max-width: 300px;
+  width: auto;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  background-color: var(--custom__component__background-color, core.$color-neutral-20);
+  padding: 1.25rem;
+
+  @include core.media-tablet-up {
+    max-width: unset;
+    width: 500px;
+    padding: 0.625rem;
+    flex-direction: row;
+  }
+
+  &__info {
+    &__title {
+      margin: 0 0 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@use '../../styles/core' as core;
+
+.schedule-result {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0.625rem 0;
+  padding: 0.625rem;
+
+  @include core.media-tablet-up {
+    max-width: 900px;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  &:nth-of-type(odd) {
+    background-color: var(--custom__component__background-color__lighter, core.$color-neutral-20);
+  }
+
+  &:nth-of-type(even) {
+    background-color: var(--custom__component__background-color, core.$color-neutral-30);
+  }
+
+  &__info {
+    max-width: 300px;
+    margin-left: 0;
+    overflow: hidden;
+    padding: 1rem;
+
+    @include core.media-tablet-up {
+      max-width: unset;
+      margin-left: 1.25rem;
+    }
+
+    &__title {
+      margin-bottom: 1rem;
+    }
+
+    &__official-site {
+      color: var(--custom__link__color, core.$color-theme-50);
+      cursor: pointer;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

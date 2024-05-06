@@ -1,0 +1,17 @@
+@use '../../styles/core' as core;
+
+.button {
+  min-width: 150px;
+  padding: 0.625rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: var(--custom__button__background-color, core.$color-theme-50);
+  color: var(--custom__text__color, core.$color-text-white-90);
+  font-weight: bold;
+  transition: 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--custom__button__background-color__hover, core.$color-theme-40);
+  }
+}

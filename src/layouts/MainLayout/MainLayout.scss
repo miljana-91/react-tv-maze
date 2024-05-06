@@ -1,0 +1,21 @@
+.layout {
+  main {
+    width: 100%;
+    margin: auto;
+    padding: 0.625rem;
+  }
+
+  &__arrow-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 15;
+    height: 40px;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

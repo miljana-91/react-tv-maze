@@ -1,0 +1,45 @@
+@use './styles/core' as core;
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import './styles/themes/dark';
+
+::selection {
+  background-color: var(--custom__link__color, core.$color-theme-50);
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0 0 6rem;
+  background-color: var(--custom__background-color, core.$color-neutral-10);
+  color: var(--custom__text-color, core.$color-text-black-90);
+}
+
+a {
+  color: var(--custom__link__color, core.$color-theme-50);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--custom__link__color__hover, core.$color-theme-40);
+  }
+}
+
+input,
+select {
+  padding: 0.625rem;
+  border: 1px solid var(--custom__border, core.$color-neutral-20);
+  border-radius: 0.25rem;
+  background-color: var(--custom__component__background-color__lighter, core.$color-neutral-10);
+  color: var(--custom__text-color, core.$color-text-black-90);
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}

@@ -1,0 +1,55 @@
+@use '../../styles/core' as core;
+
+.episode {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+  padding: 0.625rem;
+
+  @include core.media-laptop-up {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  &:nth-of-type(odd) {
+    background-color: var(--custom__component__background-color__lighter, core.$color-neutral-20);
+  }
+
+  &:nth-of-type(even) {
+    background-color: var(--custom__component__background-color, core.$color-neutral-30);
+  }
+
+  img {
+    height: 140px;
+  }
+
+  &__info {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0.625rem;
+    margin-top: 0.625rem;
+
+    @include core.media-laptop-up {
+      margin-top: 0;
+      align-items: flex-start;
+    }
+
+    p {
+      margin: 0;
+      margin-bottom: 0.125rem;
+      font-size: 0.875rem;
+    }
+
+    &__name {
+      font-weight: bold;
+      font-size: 1.25rem;
+      margin-bottom: 0.625rem;
+      text-align: center;
+    }
+  }
+}

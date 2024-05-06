@@ -1,0 +1,47 @@
+{
+  "extends": ["stylelint-config-standard-scss"],
+  "plugins": ["stylelint-scss", "stylelint-order"],
+  "rules": {
+    "declaration-block-no-duplicate-custom-properties": true,
+    "declaration-block-no-duplicate-properties": true,
+    "keyframe-block-no-duplicate-selectors": true,
+    "no-duplicate-at-import-rules": true,
+    "no-duplicate-selectors": true,
+    "block-no-empty": true,
+    "no-irregular-whitespace": true,
+    "custom-property-no-missing-var-function": true,
+    "custom-property-pattern": null,
+    "selector-class-pattern": null,
+    "declaration-property-unit-allowed-list": {
+      "border": ["px", "%"],
+      "padding|margin|gap|font-size|border-radius": ["rem", "em"]
+    },
+    "order/order": ["custom-properties", "declarations"],
+    "order/properties-order": [
+      "order",
+      "box-sizing",
+      "position",
+      "min-width",
+      "max-width",
+      "width",
+      "min-height",
+      "max-height",
+      "height",
+      "display",
+      "justify-content",
+      "align-items",
+      "gap",
+      "flex-wrap",
+      "flex-direction",
+      "margin/*",
+      "padding/*",
+      "border",
+      "border-radius",
+      "background-color",
+      "color",
+      "font/*",
+      "text/*",
+      "cursor"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+.input {
+  padding: 0.625rem;
+  border: 1px solid var(--custom__border, core.$color-neutral-20);
+  border-radius: 0.25rem;
+  background-color: var(--custom__component__background-color__lighter, core.$color-neutral-10);
+  color: var(--custom__text-color, core.$color-text-black-90);
+}

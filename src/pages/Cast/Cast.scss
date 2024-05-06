@@ -1,0 +1,15 @@
+.cast-page {
+  &__cast {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  .button {
+    display: block;
+    margin: auto;
+  }
+}

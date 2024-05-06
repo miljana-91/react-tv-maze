@@ -1,0 +1,30 @@
+@use '../core' as core;
+
+.dark-mode {
+  --custom__background-color: #{core.$color-background-dark};
+  --custom__component__background-color: #{core.$color-neutral-80};
+  --custom__component__background-color__lighter: #{core.$color-neutral-70};
+  --custom__text-color: #{core.$color-text-white-90};
+  --custom__text-color__lighter: #{core.$color-text-white-60};
+  --custom__box-shadow: #{core.$color-neutral-80};
+  --custom__border: #{core.$color-neutral-60};
+
+  // Link
+  --custom__link__color: #{core.$color-theme-30};
+  --custom__link__color__hover: #{core.$color-theme-20};
+
+  // Button
+  --custom__button__background-color: #{core.$color-theme-40};
+  --custom__button__background-color__hover: #{core.$color-theme-30};
+
+  // Badge
+  --custom__badge__background-color: #{core.$color-neutral-60};
+  --custom__badge__background-color__hover: #{core.$color-neutral-50};
+
+  // Switch button
+  --custom__switch__slider__background-color: #{core.$color-neutral-60};
+  --custom__switch__slider__dot__background-color: #{core.$color-neutral-70};
+  --custom__switch__slider__dot__background-color__disabled: #{core.$color-neutral-60};
+  --custom__switch__slider__background-color__disabled: #{core.$color-neutral-70};
+  --custom__switch__slider__background-color__checked: #{core.$color-theme-30};
+}

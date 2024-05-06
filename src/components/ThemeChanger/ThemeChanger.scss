@@ -1,0 +1,11 @@
+@use '../../styles/core' as core;
+
+.theme-changer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &__icon {
+    color: var(--custom__text-color__lighter, core.$color-text-black-60);
+  }
+}

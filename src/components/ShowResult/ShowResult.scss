@@ -1,0 +1,54 @@
+@use '../../styles/core' as core;
+
+.result {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin: 1.25rem auto;
+  font-size: 0.875rem;
+
+  @include core.media-tablet-up {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  &:nth-of-type(odd) {
+    background-color: var(--custom__component__background-color__lighter, core.$color-neutral-20);
+  }
+
+  &:nth-of-type(even) {
+    background-color: var(--custom__component__background-color, core.$color-neutral-30);
+  }
+
+  &__info {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-self: center;
+
+    h3 {
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      flex-direction: column;
+
+      @include core.media-tablet-up {
+        justify-content: flex-start;
+        flex-direction: row;
+      }
+    }
+  }
+}

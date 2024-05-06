@@ -1,0 +1,24 @@
+@use '../../styles/core' as core;
+
+.episode {
+  background-color: var(--custom__component__background-color, white);
+
+  &__info {
+    &__name {
+      color: var(--custom__link__color, core.$color-theme-50);
+      font-weight: 'normal';
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+
+  p {
+    img {
+      height: 18px;
+      vertical-align: -3px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@use '../../styles/core' as core;
+
+.summary {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 1.25rem auto;
+  padding: 0.625rem;
+  font-size: 0.875rem;
+
+  @include core.media-smartphone-only {
+    flex-direction: column;
+  }
+
+  img {
+    min-width: 210px;
+    max-width: 300px;
+
+    @include core.media-smartphone-only {
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-self: center;
+    padding: 0 1.25rem;
+
+    &__buttons {
+      display: flex;
+      gap: 0.5rem;
+      margin: 1rem 0 0;
+
+      @include core.media-smartphone-only {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1.25rem;
+      }
+    }
+  }
+}
